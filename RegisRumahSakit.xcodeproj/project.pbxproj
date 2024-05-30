@@ -14,6 +14,8 @@
 		906EB7312C070C6800B852DE /* RegisRumahSakitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906EB7302C070C6800B852DE /* RegisRumahSakitTests.swift */; };
 		906EB73B2C070C6800B852DE /* RegisRumahSakitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906EB73A2C070C6800B852DE /* RegisRumahSakitUITests.swift */; };
 		906EB73D2C070C6800B852DE /* RegisRumahSakitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906EB73C2C070C6800B852DE /* RegisRumahSakitUITestsLaunchTests.swift */; };
+		906EB74E2C07180100B852DE /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906EB74D2C07180100B852DE /* ResultView.swift */; };
+		906EB7572C0865CD00B852DE /* PatientData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906EB7562C0865CD00B852DE /* PatientData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		906EB7362C070C6800B852DE /* RegisRumahSakitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegisRumahSakitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		906EB73A2C070C6800B852DE /* RegisRumahSakitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisRumahSakitUITests.swift; sourceTree = "<group>"; };
 		906EB73C2C070C6800B852DE /* RegisRumahSakitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisRumahSakitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		906EB74D2C07180100B852DE /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		906EB7552C085AAF00B852DE /* RegisRumahSakit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RegisRumahSakit.entitlements; sourceTree = "<group>"; };
+		906EB7562C0865CD00B852DE /* PatientData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +99,13 @@
 		906EB71E2C070C6300B852DE /* RegisRumahSakit */ = {
 			isa = PBXGroup;
 			children = (
+				906EB7552C085AAF00B852DE /* RegisRumahSakit.entitlements */,
 				906EB71F2C070C6300B852DE /* RegisRumahSakitApp.swift */,
 				906EB7212C070C6300B852DE /* ContentView.swift */,
 				906EB7232C070C6700B852DE /* Assets.xcassets */,
 				906EB7252C070C6700B852DE /* Preview Content */,
+				906EB74D2C07180100B852DE /* ResultView.swift */,
+				906EB7562C0865CD00B852DE /* PatientData.swift */,
 			);
 			path = RegisRumahSakit;
 			sourceTree = "<group>";
@@ -257,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				906EB74E2C07180100B852DE /* ResultView.swift in Sources */,
 				906EB7222C070C6300B852DE /* ContentView.swift in Sources */,
 				906EB7202C070C6300B852DE /* RegisRumahSakitApp.swift in Sources */,
+				906EB7572C0865CD00B852DE /* PatientData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,12 +429,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RegisRumahSakit/RegisRumahSakit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RegisRumahSakit/Preview Content\"";
 				DEVELOPMENT_TEAM = 72R73HP2PG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need to access your data ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need access to update your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,12 +461,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RegisRumahSakit/RegisRumahSakit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RegisRumahSakit/Preview Content\"";
 				DEVELOPMENT_TEAM = 72R73HP2PG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need to access your data ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need access to update your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
