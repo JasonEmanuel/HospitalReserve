@@ -12,36 +12,28 @@ struct SymptomView: View {
     @StateObject private var viewModel = SymptomManager()
     @Binding var patientData: PatientData
     @State private var showInputSheet = false
-    @State private var showAlert = false
-    @State private var alertMessage = ""
-    @State private var selectedSymptom: HKCategoryTypeIdentifier? = nil
     @State private var showResult = false
     
     var body: some View {
-        NavigationView {
-            VStack {
-                List(viewModel.symptoms, id: \.uuid) { sample in
-                    VStack(alignment: .leading) {
-                        Text(formatIdentifier(sample.categoryType.identifier))
-                            .font(.headline)
-                        Text("Start: \(formatDate(sample.startDate))")
-                        Text("End: \(formatDate(sample.endDate))")
-                    }
+        VStack {
+            List(viewModel.symptoms, id: \.uuid) { sample in
+                VStack(alignment: .leading) {
+                    Text(formatIdentifier(sample.categoryType.identifier))
+                        .font(.headline)
+                    Text("Start: \(formatDate(sample.startDate))")
+                    Text("End: \(formatDate(sample.endDate))")
                 }
-                
-                NavigationLink(destination: ResultView(patientData: $patientData, symptoms: viewModel.symptoms), isActive: $showResult) {
-                    Button(action: {
-                        showResult = true
-                    }) {
-                        Text("Langkah Berikutnya")
-                            .frame(maxWidth: .infinity, alignment: .center)
-                    }
+            }
+            
+            NavigationLink(destination: ResultView(patientData: $patientData, symptoms: $viewModel.symptoms), isActive: $showResult) {
+                Button(action: {
+                    showResult = true
+                }) {
+                    Text("Langkah Berikutnya")
+                        .frame(maxWidth: .infinity, alignment: .center)
                 }
-                .navigationTitle("Health Symptoms")
             }
-            .alert(isPresented: $showAlert) {
-                Alert(title: Text("Health Symptoms"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
-            }
+            .navigationTitle("Health Symptoms")
         }
     }
 

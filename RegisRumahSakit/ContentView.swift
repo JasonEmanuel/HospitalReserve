@@ -61,9 +61,9 @@ struct ContentView: View {
                     TextField("Kewarganegaraan", text: $patientData.nationality)
                 }
                 
-                NavigationLink(destination: SymptomView(patientData: $patientData), isActive: $showResult) {
+                NavigationLink(destination: SymptomView(patientData: $patientData)) {
                     Button(action: {
-                        showResult = true
+                        
                     }) {
                         Text("Langkah Berikutnya")
                             .frame(maxWidth: .infinity, alignment: .center)

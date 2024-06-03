@@ -10,7 +10,7 @@ import HealthKit
 
 struct ResultView: View {
     @Binding var patientData: PatientData
-    var symptoms: [HKCategorySample]
+    @Binding var symptoms: [HKCategorySample]
     
     var body: some View {
         ScrollView {
