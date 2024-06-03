@@ -8,7 +8,7 @@
 import Foundation
 import HealthKit
 
-class HealthKitViewModel: ObservableObject {
+class SymptomManager: ObservableObject {
     private let healthStore = HKHealthStore()
     @Published var symptoms: [HKCategorySample] = []
     

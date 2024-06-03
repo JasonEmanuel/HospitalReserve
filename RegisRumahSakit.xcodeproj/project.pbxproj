@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90360D2E2C08801D00B221A0 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90360D2D2C08801D00B221A0 /* HealthKitManager.swift */; };
+		90360D302C09C52200B221A0 /* SymptomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90360D2F2C09C52200B221A0 /* SymptomView.swift */; };
+		90360D322C09C77F00B221A0 /* SymptomManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90360D312C09C77F00B221A0 /* SymptomManager.swift */; };
 		906EB7202C070C6300B852DE /* RegisRumahSakitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906EB71F2C070C6300B852DE /* RegisRumahSakitApp.swift */; };
 		906EB7222C070C6300B852DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906EB7212C070C6300B852DE /* ContentView.swift */; };
 		906EB7242C070C6700B852DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906EB7232C070C6700B852DE /* Assets.xcassets */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		90360D2D2C08801D00B221A0 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		90360D2F2C09C52200B221A0 /* SymptomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomView.swift; sourceTree = "<group>"; };
+		90360D312C09C77F00B221A0 /* SymptomManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomManager.swift; sourceTree = "<group>"; };
 		906EB71C2C070C6300B852DE /* RegisRumahSakit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisRumahSakit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		906EB71F2C070C6300B852DE /* RegisRumahSakitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisRumahSakitApp.swift; sourceTree = "<group>"; };
 		906EB7212C070C6300B852DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 				906EB7252C070C6700B852DE /* Preview Content */,
 				906EB74D2C07180100B852DE /* ResultView.swift */,
 				906EB7562C0865CD00B852DE /* PatientData.swift */,
+				90360D2D2C08801D00B221A0 /* HealthKitManager.swift */,
+				90360D2F2C09C52200B221A0 /* SymptomView.swift */,
+				90360D312C09C77F00B221A0 /* SymptomManager.swift */,
 			);
 			path = RegisRumahSakit;
 			sourceTree = "<group>";
@@ -268,6 +277,9 @@
 				906EB74E2C07180100B852DE /* ResultView.swift in Sources */,
 				906EB7222C070C6300B852DE /* ContentView.swift in Sources */,
 				906EB7202C070C6300B852DE /* RegisRumahSakitApp.swift in Sources */,
+				90360D2E2C08801D00B221A0 /* HealthKitManager.swift in Sources */,
+				90360D302C09C52200B221A0 /* SymptomView.swift in Sources */,
+				90360D322C09C77F00B221A0 /* SymptomManager.swift in Sources */,
 				906EB7572C0865CD00B852DE /* PatientData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
